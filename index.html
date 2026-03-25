@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Daniel Wiederman // Senior Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#dde2f6",
+              "on-secondary": "#131e8c",
+              "inverse-surface": "#dde2f6",
+              "secondary-fixed": "#e0e0ff",
+              "on-tertiary-fixed-variant": "#5d4200",
+              "surface-container-highest": "#2f3544",
+              "primary-fixed-dim": "#a4c9ff",
+              "surface": "#0d1321",
+              "on-secondary-fixed-variant": "#2f3aa3",
+              "on-secondary-fixed": "#000767",
+              "tertiary-fixed-dim": "#fabd34",
+              "on-primary-fixed": "#001c39",
+              "on-error": "#690005",
+              "tertiary-container": "#d19900",
+              "surface-bright": "#333948",
+              "background": "#0d1321",
+              "outline-variant": "#414751",
+              "on-primary-fixed-variant": "#004883",
+              "surface-container-low": "#151b29",
+              "primary": "#a4c9ff",
+              "secondary-container": "#2f3aa3",
+              "error-container": "#93000a",
+              "tertiary": "#fabd34",
+              "inverse-primary": "#0060ac",
+              "primary-container": "#60a5fa",
+              "secondary-fixed-dim": "#bdc2ff",
+              "on-tertiary-fixed": "#261900",
+              "inverse-on-surface": "#2a303f",
+              "secondary": "#bdc2ff",
+              "outline": "#8b919d",
+              "on-primary": "#00315d",
+              "on-surface-variant": "#c1c7d3",
+              "on-error-container": "#ffdad6",
+              "surface-container-lowest": "#080e1c",
+              "on-secondary-container": "#a8afff",
+              "error": "#ffb4ab",
+              "surface-dim": "#0d1321",
+              "on-tertiary": "#412d00",
+              "surface-variant": "#2f3544",
+              "surface-container-high": "#242a39",
+              "on-tertiary-container": "#4b3500",
+              "on-background": "#dde2f6",
+              "surface-tint": "#a4c9ff",
+              "surface-container": "#191f2e",
+              "primary-fixed": "#d4e3ff",
+              "on-primary-container": "#003a6b",
+              "tertiary-fixed": "#ffdea4"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #0d1321;
+        color: #dde2f6;
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0d1321]/70 backdrop-blur-md shadow-2xl shadow-black/40">
+        <div class="flex justify-between items-center px-6 md:px-12 py-4 max-w-screen-2xl mx-auto">
+            <div class="font-['Space_Grotesk'] font-bold text-lg md:text-xl tracking-widest text-blue-400">
+                DANIEL // WIEDERMAN
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-slate-400 hover:text-slate-200 transition-colors" href="#experience">Experience</a>
+                <a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-slate-400 hover:text-slate-200 transition-colors" href="#projects">Projects</a>
+                <a class="font-['Inter'] font-semibold tracking-tight uppercase text-xs text-slate-400 hover:text-slate-200 transition-colors" href="#skills">Skills</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="Daniel_Wiederman_CV.pdf" download="Daniel_Wiederman_CV.pdf" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label font-bold text-xs uppercase tracking-wider hover:bg-primary transition-all duration-300 scale-95 active:scale-90 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">download</span> Download CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="min-h-[85vh] flex flex-col justify-center px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="inline-block px-4 py-1 mb-6 rounded-full bg-surface-container-highest border border-outline-variant/20 self-start">
+                <span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary">System Online: Ready to Deploy</span>
+            </div>
+            <h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter text-on-surface mb-8 max-w-4xl leading-tight">
+                Senior Fullstack <span class="text-primary-container">Developer</span>
+            </h1>
+            <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+                Architecting high-performance, scalable enterprise solutions. Specializing in the React/Node.js ecosystem, building multi-tenant SaaS platforms, secure data pipelines, and AI-assisted tools for Israel's largest media organizations.
+            </p>
+            <div class="flex gap-6 items-center">
+                <a class="flex items-center gap-2 group" href="mailto:DanielWiederman@gmail.com">
+                    <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">alternate_email</span>
+                    <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">Email</span>
+                </a>
+                <a class="flex items-center gap-2 group" href="https://www.linkedin.com/in/daniel-wiederman-297917178" target="_blank">
+                    <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform" style="font-variation-settings: 'FILL' 1;">person</span>
+                    <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">LinkedIn</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="py-24 bg-surface-container-low" id="experience">
+            <div class="px-6 md:px-12 max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-16">
+                    <div class="md:w-1/3">
+                        <h2 class="font-headline font-bold text-4xl tracking-tight text-on-surface sticky top-32">Experience<br/><span class="text-primary">Timeline</span></h2>
+                    </div>
+                    <div class="md:w-2/3 space-y-16 relative before:content-[''] before:absolute before:left-0 before:top-4 before:bottom-4 before:w-px before:bg-outline-variant/20">
+                        
+                        <!-- YIT -->
+                        <div class="pl-8 md:pl-12 relative">
+                            <div class="absolute left-[-5px] top-2 w-[10px] h-[10px] rounded-full bg-primary shadow-[0_0_10px_rgba(164,201,255,0.6)]"></div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="font-headline font-bold text-2xl text-on-surface">Senior Fullstack Developer</h3>
+                                    <p class="font-label text-primary uppercase text-sm font-bold tracking-widest mt-1">YIT (Yedioth Ahronoth Group)</p>
+                                </div>
+                                <span class="font-label text-xs text-on-surface-variant bg-surface-container-highest px-3 py-1 rounded-full uppercase hidden sm:block">2020 — Present</span>
+                            </div>
+                            <ul class="space-y-4 text-on-surface-variant font-body leading-relaxed text-sm md:text-base">
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    <span><strong>Enterprise Paywall & Auth:</strong> Architected a multi-tenant TypeScript backend serving major media brands. Implemented JWT sessions, OAuth, payment gateways, and managed PostgreSQL schemas via Kysely.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    <span><strong>Editorial CMS Platform:</strong> Engineered a large-scale React/Redux platform used across 10+ Israeli media sites. Built WYSIWYG editors, Socket.io collaboration, and SSR build pipelines.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    <span><strong>Data Pipelines & Microservices:</strong> Designed background queue architectures (BullMQ/Redis) for secure AWS video encoding and synchronized disparate sports APIs with complex identity deduplication.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Wittix -->
+                        <div class="pl-8 md:pl-12 relative">
+                            <div class="absolute left-[-5px] top-2 w-[10px] h-[10px] rounded-full bg-outline-variant"></div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="font-headline font-bold text-2xl text-on-surface">Fullstack Developer</h3>
+                                    <p class="font-label text-primary uppercase text-sm font-bold tracking-widest mt-1">Wittix</p>
+                                </div>
+                                <span class="font-label text-xs text-on-surface-variant bg-surface-container-highest px-3 py-1 rounded-full uppercase hidden sm:block">2019 — 2020</span>
+                            </div>
+                            <ul class="space-y-4 text-on-surface-variant font-body leading-relaxed text-sm md:text-base">
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    <span><strong>Banking Platform:</strong> Collaborated with a team to develop a comprehensive banking system from the early architectural stages, focusing on secure transaction logic.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    <span><strong>Marketing Architecture:</strong> Solo-developed the main Wittix website and a dedicated campaign management panel, building both the front-end and back-end infrastructure.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto" id="projects">
+            <h2 class="font-headline font-bold text-4xl tracking-tight text-on-surface mb-16">Selected <span class="text-primary-container">Projects</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                
+                <!-- Project 1 -->
+                <div class="group bg-surface-container-low rounded-lg overflow-hidden flex flex-col transition-all hover:bg-surface-container">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Dark futuristic server room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRfsanQ_ooDw8F5LtrCYMvLtW9ZAj4643exPLjJR644ta0SAohjyGn-RiKd61Hv6_e2mJXgCutwDgoD01AKXYwBtpuXygtvvpgxdH2fSnzW4rskee8_ofhyFipDv2WxRXd9RFMRTLpLtFoA7nVheJg2WTmTHzk3GK8oP4XtoV4ROCHBPl66OIvsuGohBeaiut7Yy_LkxqBdp0cOlyaIamd9NtuxH3X7zgbafs7m78Qx0YTgK8qp06cu3iJF6a6cYteg6ALTEdvzks"/>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="font-headline font-bold text-2xl text-on-surface mb-4">WCM Auth: Paywall Platform</h3>
+                        <p class="text-on-surface-variant mb-8 flex-grow">
+                            A multi-tenant SaaS paywall and subscription platform serving major Israeli media brands (ynet, calcalist) from a single codebase. Handles recurring billing, JWT dual-cookie sessions, and metered access.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">Node.js</span>
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">TypeScript</span>
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">PostgreSQL</span>
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">React 19</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-surface-container-low rounded-lg overflow-hidden flex flex-col transition-all hover:bg-surface-container">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Abstract visualization of data flowing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWwb1rfETlnjJcUvdTFELLp1jjuKMvcwreuQpgZmqg0CuoBK5Hd5CDxYy8FG7zEn53Z0VGDKfRbBy5L8pTDpU7Lk14CyolOZDr-Vqj_2Erp77zoQVzhohRvS7cPp2bGyXryI6oA2nxxRGQhaL64cSaNlCFeC5KLCCVbZkSMMpYc3N0myC_88_FTXPb99bzthEv7Z-a-UYn5T7h2auESfM0P3Ra7kjD_JeA_v_DRuXklWqG3PY0Iv0IiMjwRd2Wc-fAiF4AKqFhtf8"/>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <h3 class="font-headline font-bold text-2xl text-on-surface mb-4">Video Processing Pipeline</h3>
+                        <p class="text-on-surface-variant mb-8 flex-grow">
+                            Architected a secure, end-to-end video upload and encoding workflow. Designed S3 bucket isolation for automated antivirus scanning, AWS encoding queues, and background polling tasks.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">AWS S3/Lambda</span>
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">BullMQ</span>
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">Redis</span>
+                            <span class="font-label text-[10px] uppercase tracking-wider px-3 py-1 rounded-full bg-surface-container-highest text-secondary-fixed-dim">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-surface-container-low rounded-lg overflow-hidden flex flex-col md:col-span-2 transition-all hover:bg-surface-container">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 h-80 overflow-hidden relative">
+                            <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
+                            <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105" data-alt="Technical architectural blueprint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF26QJS-S8TqzTSB-68_JkATO0vXmH-36IgEOfQwWah6rXoK25Te4nLtdhrBd0EkHn5d9_7r1KJeXtPl8qiGrHKzQyS4LN43RNKEJtiBKketR1c8AKrONAkKFP354NjYdR-KO1oopvWORK0G8OETdVa08tJrETp19UOCHkJvahG7dy46aIe7U5QDOS7_E5uiW4xQ8RHERxlOoMaBKhfJjnvJNe90uMRbNnb0hLDUZRumblBwguRYZjU07yHyNJTwleuqwQp0ShpI4"/>
+                        </div>
+                        <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                            <h3 class="font-headline font-bold text-3xl text-on-surface mb-6">Digital Print Archives & AI</h3>
+                            <p class="text-on-surface-variant mb-10 text-lg leading-relaxed">
+                                A production digital newspaper archive system enabling editorial staff to digitize scanned media. Built an AI-assisted PDF segmentation pipeline utilizing ML clustering alongside a custom React 19 interactive page-flip reader.
+                            </p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="font-label text-xs uppercase tracking-widest px-4 py-2 rounded-full bg-surface-container-highest text-secondary-fixed-dim">React 19</span>
+                                <span class="font-label text-xs uppercase tracking-widest px-4 py-2 rounded-full bg-surface-container-highest text-secondary-fixed-dim">TypeScript</span>
+                                <span class="font-label text-xs uppercase tracking-widest px-4 py-2 rounded-full bg-surface-container-highest text-secondary-fixed-dim">ML Clustering</span>
+                                <span class="font-label text-xs uppercase tracking-widest px-4 py-2 rounded-full bg-surface-container-highest text-secondary-fixed-dim">Monorepo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-24 bg-surface-container-lowest" id="skills">
+            <div class="px-6 md:px-12 max-w-7xl mx-auto">
+                <h2 class="font-headline font-bold text-4xl tracking-tight text-on-surface mb-16 text-center">Technical <span class="text-primary-container">Ecosystem</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Frontend -->
+                    <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/5">
+                        <div class="flex items-center gap-3 mb-8">
+                            <span class="material-symbols-outlined text-primary">desktop_windows</span>
+                            <h3 class="font-label font-bold text-sm uppercase tracking-widest text-on-surface">Frontend</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">React 18/19</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">TypeScript</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Redux Toolkit</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Tailwind CSS</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Vite</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & DB -->
+                    <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/5">
+                        <div class="flex items-center gap-3 mb-8">
+                            <span class="material-symbols-outlined text-primary">dns</span>
+                            <h3 class="font-label font-bold text-sm uppercase tracking-widest text-on-surface">Backend & DB</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Node.js</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">PostgreSQL</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">MSSQL/MySQL</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Koa.js / Fastify</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Kysely ORM</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Architecture -->
+                    <div class="p-8 bg-surface-container-low rounded-xl border border-outline-variant/5">
+                        <div class="flex items-center gap-3 mb-8">
+                            <span class="material-symbols-outlined text-primary">cloud</span>
+                            <h3 class="font-label font-bold text-sm uppercase tracking-widest text-on-surface">Cloud & Infra</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">AWS</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Docker</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Redis</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">BullMQ</span>
+                            <span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-secondary-fixed-dim font-label text-xs uppercase tracking-wider">Monorepos</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d1321] w-full py-16 border-t border-slate-800/30">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
+            <div class="text-blue-400 font-bold font-['Space_Grotesk'] text-xl tracking-widest">
+                DANIEL // WIEDERMAN
+            </div>
+            <div class="flex gap-12">
+                <a class="font-['Space_Grotesk'] text-[10px] tracking-[0.05em] uppercase text-slate-500 hover:text-blue-300 transition-colors" href="https://www.linkedin.com/in/daniel-wiederman-297917178" target="_blank">LinkedIn</a>
+                <a class="font-['Space_Grotesk'] text-[10px] tracking-[0.05em] uppercase text-slate-500 hover:text-blue-300 transition-colors" href="mailto:DanielWiederman@gmail.com">Email</a>
+                <a class="font-['Space_Grotesk'] text-[10px] tracking-[0.05em] uppercase text-slate-500 hover:text-blue-300 transition-colors" href="#experience">Experience</a>
+            </div>
+            <div class="font-['Space_Grotesk'] text-[10px] tracking-[0.05em] uppercase text-slate-500 opacity-80">
+                © 2026 DANIEL WIEDERMAN // ENGINEERED FOR SCALABILITY
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
